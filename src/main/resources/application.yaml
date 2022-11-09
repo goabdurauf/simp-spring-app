@@ -1,0 +1,24 @@
+spring :
+  profiles: dev
+  datasource :
+    driver-class-name : org.postgresql.Driver
+    url : jdbc:postgresql://localhost:5432/weather_db
+    password : 1234
+    username : postgres
+server :
+  port : 8000
+---
+spring :
+  profiles : test
+server :
+  port : 9000
+
+
+#  # Datasource
+#  spring.datasource.driver-class-name=org.postgresql.Driver
+#  #spring.datasource.url=jdbc:postgresql://localhost:5432/logistika
+#  spring.datasource.url=jdbc:postgresql://localhost:5432/logistika_db
+#  #spring.datasource.password=root123
+#  spring.datasource.password=Logistika@2021
+#  spring.datasource.username=postgres
+#  #pgdumpfilepath=C:/Program Files/PostgreSQL/11/bin/pg_dump.exe
